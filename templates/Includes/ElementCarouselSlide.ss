@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 <div class="element-carousel__slide swiper-slide">
+=======
+>>>>>>> 425b431 (re init)
 <div <% if $title || $Content %>class="card"<% end_if %>>
   <% if $Image %>
     <% if $Top.Lazy %>
@@ -35,4 +38,7 @@
   </div>
 <% end_if %>
 </div>
+<<<<<<< HEAD
 </div>
+=======
+>>>>>>> 425b431 (re init)

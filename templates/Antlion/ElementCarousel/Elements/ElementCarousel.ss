@@ -6,6 +6,7 @@
     <% end_with %>
 <% end_if %>
 <div class="cell element-carousel">
+<<<<<<< HEAD
   <div class="swiper" id="carousel-{$ID}" data-element-carousel>
     <div class="swiper-wrapper">
       <% loop $Slides %>
@@ -13,6 +14,21 @@
       <% end_loop %>
     </div>
 
+=======
+  <div 
+    class="swiper" 
+    id="carousel-{$ID}" 
+    data-element-carousel
+    data-swiper='{$CarouselOptionsJSON.RAW}'
+  >
+    <div class="swiper-wrapper">
+      <% loop $Slides %>
+      <div class="swiper-slide">
+        <% include ElementCarouselSlide %>
+      </div>
+      <% end_loop %>
+    </div>
+>>>>>>> 425b431 (re init)
     <% if $Pagination %><div class="swiper-pagination" aria-label="Carousel pagination"></div><% end_if %>
     <% if $Navigation %>
       <button class="swiper-button-prev" aria-label="Previous slide"></button>
@@ -21,14 +37,22 @@
     <% if $Scrollbar %><div class="swiper-scrollbar"></div><% end_if %>
   </div>
 </div>
+<<<<<<< HEAD
 <%-- <% require javascript('https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js') %> --%>
 <%-- <% require javascript('elements/element-carousel:client/js/swiper-bundle.min.js') %> --%>
 
 <script>
+=======
+<%-- <script>
+>>>>>>> 425b431 (re init)
 document.addEventListener('DOMContentLoaded', function(){
   var el = document.getElementById('carousel-{$ID}');
   if (!el) return;
   var options = {$CarouselOptionsJSON.RAW};
   new Swiper(el, options);
 });
+<<<<<<< HEAD
 </script>
+=======
+</script> --%>
+>>>>>>> 425b431 (re init)
