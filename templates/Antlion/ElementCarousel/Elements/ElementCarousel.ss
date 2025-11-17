@@ -24,11 +24,11 @@
 <%-- <% require javascript('https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js') %> --%>
 <%-- <% require javascript('elements/element-carousel:client/js/swiper-bundle.min.js') %> --%>
 
-<script>
+<%-- <script>
 document.addEventListener('DOMContentLoaded', function(){
   var el = document.getElementById('carousel-{$ID}');
   if (!el) return;
   var options = {$CarouselOptionsJSON.RAW};
   new Swiper(el, options);
 });
-</script>
+</script> --%>
